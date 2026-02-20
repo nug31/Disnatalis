@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Instagram, Youtube, Globe, Mail, MessageCircle } from 'lucide-react';
+import MusicPlayer from './components/MusicPlayer';
 
 const Countdown = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState({
@@ -109,6 +110,9 @@ const App = () => {
 
   return (
     <div className="bg-maroon-gradient min-h-screen relative">
+      {/* Music Player - Persistent */}
+      <MusicPlayer />
+
       {/* Splash Cover */}
       <div className={`splash-container ${isOpen ? 'hide' : ''}`}>
         <div className="rays-bg" />
