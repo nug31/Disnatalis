@@ -188,7 +188,7 @@ const App = () => {
             <h1 className="text-gold font-script text-8xl mb-4 text-shimmer" style={{ lineHeight: '1' }}>
               Dies Natalis ke-15
             </h1>
-            <h2 className="text-gold tracking-20 text-2xl font-light mb-12">
+            <h2 className="text-gold tracking-20 text-2xl font-light mb-6">
               SMK Mitra Industri MM2100
             </h2>
           </motion.div>
@@ -199,7 +199,7 @@ const App = () => {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="my-16"
+            className="my-8"
           >
             <p className="text-gold tracking-30 font-semibold text-2xl mb-6">16.00 WIB</p>
             <div className="flex justify-center items-center gap-6">
@@ -220,8 +220,8 @@ const App = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="text-gold-light font-serif italic text-base mb-10 tracking-widest uppercase"
-            style={{ lineHeight: '1.8' }}
+            className="text-gold-light font-serif italic text-base mb-6 tracking-widest uppercase"
+            style={{ lineHeight: '1.4' }}
           >
             "To Be Number One to the Next Level by Man Jadda Wajada and Agile"
           </motion.p>
@@ -232,10 +232,10 @@ const App = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="my-16"
+            className="my-8"
           >
             <h3 className="text-gold tracking-40 uppercase text-sm mb-6">Tempat</h3>
-            <p className="text-light font-light text-xs mb-8 mx-auto" style={{ maxWidth: '400px', lineHeight: '1.8', opacity: 0.8 }}>
+            <p className="text-light font-light text-xs mb-8 mx-auto" style={{ maxWidth: '400px', lineHeight: '1.4', opacity: 0.8 }}>
               SMK Mitra Industri MM2100<br />
               Kawasan Industri MM2100, Jl. Kalimantan Blok DD 1-1, Jl. Kalimantan,<br />
               Danau Indah, Kec. Cikarang Barat, Kabupaten Bekasi, Jawa Barat 17530
