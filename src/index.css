@@ -458,7 +458,7 @@ body {
 
 .frame-overlay {
   position: fixed;
-  inset: 0;
+  inset: -0.25rem;
   pointer-events: none;
   z-index: 50;
   background-image: url('/frame.png');
