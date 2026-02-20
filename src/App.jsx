@@ -121,10 +121,9 @@ const App = () => {
         <div className="rays-bg" />
         <div className="mandala-bg" />
         <GoldParticles />
-        <div className="corner corner-tl"><span className="ornament orn-tl">❧</span></div>
-        <div className="corner corner-tr"><span className="ornament orn-tr">❧</span></div>
-        <div className="corner corner-bl"><span className="ornament orn-bl">❧</span></div>
-        <div className="corner corner-br"><span className="ornament orn-br">❧</span></div>
+        <div className="mandala-bg" />
+        <GoldParticles />
+        <div className="frame-overlay" />
 
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -159,13 +158,11 @@ const App = () => {
       {/* Main Content */}
       <div className={`${isOpen ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000 py-20 px-6 relative overflow-hidden`}>
         <div className="rays-bg" />
-        <div className="mandala-bg" />
+        <div className="mandala-bg-top" />
         <GoldParticles />
-        {/* Decorative Ornaments */}
-        <div className="corner corner-tl"><span className="ornament orn-tl">❧</span></div>
-        <div className="corner corner-tr"><span className="ornament orn-tr">❧</span></div>
-        <div className="corner corner-bl"><span className="ornament orn-bl">❧</span></div>
-        <div className="corner corner-br"><span className="ornament orn-br">❧</span></div>
+
+        {/* New Frame Overlay */}
+        <div className="frame-overlay" />
 
         <div className="max-w-2xl mx-auto relative text-center" style={{ zIndex: 20 }}>
           {/* Logo */}
@@ -340,7 +337,7 @@ const App = () => {
                 <Globe size={20} />
               </a>
             </div>
-            <p className="mt-8 text-xs tracking-50 uppercase font-light" style={{ opacity: 0.3 }}>
+            <p className="mt-8 text-xs tracking-50 font-light" style={{ opacity: 0.3 }}>
               SMK Mitra Industri MM2100 • Anniversary 15
             </p>
           </footer>
