@@ -198,24 +198,6 @@ const App = () => {
 
           <div className="divider-gold" />
 
-          {/* Countdown */}
-          <Countdown targetDate={targetDate} />
-
-          <div className="divider-gold" />
-
-          {/* Motto / Theme */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-            className="text-gold-light font-serif italic text-xl mb-10 tracking-widest uppercase"
-            style={{ lineHeight: '1.8' }}
-          >
-            "To Be Number One to the Next Level by Man Jadda Wajada and Agile"
-          </motion.p>
-
-          <div className="divider-gold" />
-
           {/* Date & Time */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -231,6 +213,24 @@ const App = () => {
             <p className="text-4xl text-gold mt-6 font-light tracking-20">2026</p>
           </motion.div>
 
+          <div className="divider-gold" />
+
+          {/* Countdown */}
+          <Countdown targetDate={targetDate} />
+
+          {/* Motto / Theme */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="text-gold-light font-serif italic text-base mb-10 tracking-widest uppercase"
+            style={{ lineHeight: '1.8' }}
+          >
+            "To Be Number One to the Next Level by Man Jadda Wajada and Agile"
+          </motion.p>
+
+          <div className="divider-gold" />
+
           {/* Location Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -238,7 +238,7 @@ const App = () => {
             className="my-16"
           >
             <h3 className="text-gold tracking-40 uppercase text-sm mb-6">Tempat</h3>
-            <p className="text-light font-light mb-8 mx-auto" style={{ maxWidth: '400px', lineHeight: '1.8', opacity: 0.8 }}>
+            <p className="text-light font-light text-xs mb-8 mx-auto" style={{ maxWidth: '400px', lineHeight: '1.8', opacity: 0.8 }}>
               SMK Mitra Industri MM2100<br />
               Kawasan Industri MM2100, Jl. Kalimantan Blok DD 1-1, Jl. Kalimantan,<br />
               Danau Indah, Kec. Cikarang Barat, Kabupaten Bekasi, Jawa Barat 17530
@@ -249,7 +249,7 @@ const App = () => {
               rel="noreferrer"
               className="btn-gold"
             >
-              Petunjuk Arah
+              Lihat Lokasi
             </a>
           </motion.div>
 
