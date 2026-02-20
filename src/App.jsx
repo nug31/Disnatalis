@@ -188,7 +188,7 @@ const App = () => {
             <h1 className="text-gold font-script text-8xl mb-4 text-shimmer" style={{ lineHeight: '1' }}>
               Dies Natalis ke-15
             </h1>
-            <h2 className="text-light tracking-20 text-2xl font-light mb-12">
+            <h2 className="text-gold tracking-20 text-2xl font-light mb-12">
               SMK Mitra Industri MM2100
             </h2>
           </motion.div>
