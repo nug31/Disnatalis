@@ -202,10 +202,10 @@ const App = () => {
             className="my-8"
           >
             <p className="text-gold tracking-30 font-semibold text-2xl mb-6">16.00 WIB</p>
-            <div className="flex justify-center items-center gap-6">
-              <span className="text-xl text-gold-light" style={{ borderBottom: '1px solid rgba(212, 175, 55, 0.4)', paddingBottom: '0.25rem' }}>SELASA</span>
+            <div className="date-flex-container">
+              <span className="text-xl text-gold-light date-label-border">SELASA</span>
               <span className="text-7xl font-bold text-gold">24</span>
-              <span className="text-xl text-gold-light" style={{ borderBottom: '1px solid rgba(212, 175, 55, 0.4)', paddingBottom: '0.25rem' }}>FEBRUARI</span>
+              <span className="text-xl text-gold-light date-label-border">FEBRUARI</span>
             </div>
             <p className="text-4xl text-gold mt-6 font-light tracking-20">2026</p>
           </motion.div>
