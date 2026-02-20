@@ -55,13 +55,16 @@ const Countdown = ({ targetDate }) => {
 // New Component for Random Gold Particles
 const GoldParticles = () => {
   // Generate random particles
-  const particles = Array.from({ length: 30 }).map((_, i) => ({
-    id: i,
-    left: Math.random() * 100 + '%',
-    size: Math.random() * 3 + 1 + 'px',
-    duration: Math.random() * 5 + 5 + 's', // 5-10s duration
-    delay: Math.random() * 5 + 's',
-  }));
+  // Generate random particles only once
+  const particles = React.useMemo(() => {
+    return Array.from({ length: 30 }).map((_, i) => ({
+      id: i,
+      left: Math.random() * 100 + '%',
+      size: Math.random() * 3 + 1 + 'px',
+      duration: Math.random() * 5 + 5 + 's', // 5-10s duration
+      delay: Math.random() * 5 + 's',
+    }));
+  }, []);
 
   return (
     <div className="particles-container">
@@ -134,7 +137,7 @@ const App = () => {
             className="logo-small mx-auto mb-8 school-logo"
           />
           <h1 className="text-gold font-script text-6xl mb-2 text-shimmer">Dies Natalis ke-15</h1>
-          <p className="text-sm tracking-widest uppercase opacity-70 mb-10">SMK Mitra Industri MM2100</p>
+          <p className="text-sm tracking-widest opacity-70 mb-10">SMK Mitra Industri MM2100</p>
 
           <div className="guest-name-box">
             <p className="text-xs uppercase tracking-[0.3em] font-light mb-2">Kepada Yth. Bapak/Ibu/Sdr/i</p>
@@ -188,7 +191,7 @@ const App = () => {
             <h1 className="text-gold font-script text-8xl mb-4 text-shimmer" style={{ lineHeight: '1' }}>
               Dies Natalis ke-15
             </h1>
-            <h2 className="text-light tracking-20 text-2xl uppercase font-light mb-12">
+            <h2 className="text-light tracking-20 text-2xl font-light mb-12">
               SMK Mitra Industri MM2100
             </h2>
           </motion.div>

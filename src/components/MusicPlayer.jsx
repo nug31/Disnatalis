@@ -7,9 +7,10 @@ const MusicPlayer = () => {
     const audioUrl = "/hbd.mp3";
 
     const [isPlaying, setIsPlaying] = useState(false);
-    const audioRef = useRef(new Audio(audioUrl));
+    const audioRef = useRef(null);
 
     useEffect(() => {
+        audioRef.current = new Audio(audioUrl);
         const audio = audioRef.current;
         audio.loop = true;
 
@@ -21,6 +22,8 @@ const MusicPlayer = () => {
 
     const togglePlay = () => {
         const audio = audioRef.current;
+        if (!audio) return;
+
         if (isPlaying) {
             audio.pause();
         } else {
