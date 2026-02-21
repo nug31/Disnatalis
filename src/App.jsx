@@ -108,7 +108,7 @@ const App = () => {
     setSubmittedData({ ...rsvpData });
     setIsSubmitted(true);
 
-    window.open(`https://wa.me/6285715689618?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/+6287837155685?text=${encodedMessage}`, '_blank');
   };
 
   return (
